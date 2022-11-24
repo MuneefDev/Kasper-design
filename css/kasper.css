@@ -327,7 +327,7 @@ nav > i {
 }
 @media (max-width: 967px) {
     .design {
-        height: 600px;
+        height: 650px;
         flex-wrap: wrap;
     }
     .design img {
@@ -373,4 +373,73 @@ nav > i {
     content: "\e163";
     font-weight: 900;
     margin-right: 10px;
+}
+
+/* Start portfolio */
+.portfolio {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .shuffle li {
+    padding: 10px;
+    transition: 0.3s;
+}
+.portfolio .shuffle .active {
+    background-color: var(--main-color);
+    color: white;
+}
+.portfolio .shuffle li:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.portfolio .imgs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 60px;
+}
+.portfolio .imgs-container figure {
+    overflow: hidden;
+    position: relative;
+}
+.portfolio .imgs-container figure:hover figcaption {
+    bottom: 0;
+}
+.portfolio .imgs-container figure:hover img {
+    transform: rotate(2deg) scale(1.1);
+}
+.portfolio .imgs-container figure img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+.portfolio .imgs-container figure figcaption {
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    transition: 0.3s;
+    padding: 5px 10px;
+    width: 100%;
+}
+.portfolio .imgs-container figure figcaption h4 {
+    margin-bottom: 2px;
+}
+.portfolio .imgs-container figure figcaption p {
+    color: var(--main-color);
+}
+.portfolio .more {
+    background-color: var(--main-color);
+    padding: 10px;
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.portfolio .more:hover {
+    color: red;
 }
