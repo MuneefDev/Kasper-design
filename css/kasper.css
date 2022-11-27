@@ -506,3 +506,14 @@ nav > i {
 .video .text button:hover {
     color: red;
 }
+
+/* Start about*/
+.about {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.about img {
+    max-width: 100%;
+}
+
+/* Start Ststistics */
